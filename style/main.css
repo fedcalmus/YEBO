@@ -1,15 +1,53 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?ouzl3l');
-    src:  url('fonts/icomoon.eot?ouzl3l#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ouzl3l') format('truetype'),
-    url('fonts/icomoon.woff?ouzl3l') format('woff'),
-    url('fonts/icomoon.svg?ouzl3l#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?ouzl3l');
+    src:  url('../fonts/icomoon.eot?ouzl3l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ouzl3l') format('truetype'),
+    url('../fonts/icomoon.woff?ouzl3l') format('woff'),
+    url('../fonts/icomoon.svg?ouzl3l#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../fonts/lato-bold-webfont.eot");
+url("../fonts/lato-bold-webfont.woff") format("woff"),
+url("../fonts/roboto-medium-webfont.woff2") format("woff2");
+url("../fonts/roboto-medium-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/lato-regular-webfont.eot");
+url("../fonts/lato-regular-webfont.woff") format("woff"),
+url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+url("../fonts/roboto-regular-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato Italic";
+    src: url("../fonts/lato-italic-webfont.eot");
+url("../fonts/lato-italic-webfont.woff") format("woff"),
+url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+url("../fonts/roboto-italic-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lato Light";
+    src: url("../fonts/lato-light-webfont.eot");
+url("../fonts/lato-light-webfont.woff") format("woff"),
+url("../fonts/roboto-light-webfont.woff2") format("woff2");
+url("../fonts/roboto-light-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 
 header, section, footer, aside, nav, article, figure, figcaption {
@@ -41,7 +79,7 @@ time, mark, audio, video {
 body{
     background-color: #f7f7f7;
     color: #848789;
-    font-family: 'Lato Regular', Georgia, times, serif;
+    font-family: "Lato Regular", Georgia, times, serif;
     outline: none;
     margin:0;
     font-size:18px;
@@ -62,18 +100,20 @@ header{
     align-items: center;
 
 
+
 }
 
 .nav li{
     display: inline-table;
     margin-right: 40px;
+
 }
 
 .nav li a{
     text-decoration: none;
     color: #4d4959;
     text-transform: uppercase;
-    font-family: 'Lato Bold' Georgia, times, serif;
+    font-family: "Lato Bold";
     font-size: 13px;
     transition: 0.3s ease;
     -webkit-transition: 0.3s ease-out;
@@ -121,4 +161,32 @@ header{
 
 .icon-chain:before {
     content: "\e900";
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.vintageBike{
+    font-size:18px;
+    text-align: center;
+    padding:100px 10px;
+}
+
+.vintageBikeHeading{
+    text-transform: uppercase;
+    color: #353738;
+    font-family: "Lato Bold";
+    margin: 20px 0;
+}
+
+.vintageDescription{
+}
+
+.icon-chain{
+    font-size: 40px;
+    color: #91d2b9;
 }
