@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?ouzl3l');
+    src:  url('fonts/icomoon.eot?ouzl3l#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ouzl3l') format('truetype'),
+    url('fonts/icomoon.woff?ouzl3l') format('woff'),
+    url('fonts/icomoon.svg?ouzl3l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+    color: #848789;
+    font-family: 'Lato Regular', Georgia, times, serif;
+    outline: none;
+    margin:0;
+    font-size:18px;
+}
+
+header{
+    width:100%;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+    white-space: nowrap;
+    align-items: center;
+
+
+}
+
+.nav li{
+    display: inline-table;
+    margin-right: 40px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: #4d4959;
+    text-transform: uppercase;
+    font-family: 'Lato Bold' Georgia, times, serif;
+    font-size: 13px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+}
+
+.logoImage:hover{
+    opacity:0.6;
+    border-bottom: none !important;
+}
+.nav li a:hover{
+    border-bottom: 4px solid #4c4b5f;
+    padding: 6px 0;
+}
+
+.headerItems{
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+
+}
+
+.clearAfter::after{
+    content: " ";
+    clear: both;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chain:before {
+    content: "\e900";
+}
