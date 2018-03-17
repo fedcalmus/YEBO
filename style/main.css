@@ -98,13 +98,10 @@ header{
     padding: 20px 0;
     white-space: nowrap;
     align-items: center;
-
-
-
 }
 
 .nav li{
-    display: inline-table;
+    /*display: inline-table;*/
     margin-right: 40px;
 
 }
@@ -121,13 +118,15 @@ header{
     -webkit-transition: 0.2s ease-out;
     -moz-transition: 0.2s ease-out;
     -o-transition: 0.2s ease-out;
-
 }
 
 .logoImage:hover{
     opacity:0.6;
     border-bottom: none !important;
 }
+
+
+
 .nav li a:hover{
     border-bottom: 4px solid #4c4b5f;
     padding: 6px 0;
@@ -145,6 +144,7 @@ header{
 .clearAfter::after{
     content: " ";
     clear: both;
+    display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -156,8 +156,6 @@ header{
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -230,7 +228,7 @@ header{
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
-    padding: 30px 50px;
+    padding: 29px 50px;
 
 }
 
@@ -238,20 +236,89 @@ header{
     background-color: #64c29e;
     opacity: 0.8;
     border: none;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color:#ffffff;
     outline: none;
     cursor: pointer;
-
+    margin-left:15px;
 }
 
 .submit:hover{
-    
+    background:#4d4959;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color:#e9eaef;
+    opacity:0.8;
 }
 
 
 .submit::-moz-focus-inner {
     border: 0;
 }
+
+footer{
+    background-color: #ffffff;
+    padding: 100px 0;
+
+}
+
+
+.footerItems{
+    width: 33.3333333333%;
+    padding: 0 10px;
+    float: left;
+    color: #848789;
+
+}
+
+.footerItems strong{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #848789;
+}
+
+.footerOptions p{
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+.socialIcons{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.socialIcons li{
+    margin-right: 10px;
+}
+
+.socialIcons li a{
+    display: inline-block;
+}
+
+.socialIcons li a:hover{
+    opacity: 0.8;
+}
+
+.handcraftSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handcraftSection p{
+    margin-right:5px;
+}
+
+.handcraftSection a{
+    display: inline-block;
+}
+
+.handcraftSection a:hover{
+    opacity: 0.4;
+}
+
+
+
