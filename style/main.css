@@ -51,24 +51,19 @@ header{
 }
 
 
-.headerItems{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
+.nav{
+  
     padding: 20px 0;
     white-space: nowrap;
     align-items: center;
-}
-
-.nav{
     display: inline-flex;
+    list-style: none;
+
 }
 
 .nav li{
-    /*display: inline-table;*/
     margin: 0 20px;
-    list-style: none;
+    display:inline-block;
 
 }
 
@@ -91,15 +86,6 @@ header{
     opacity:0.6;
     border-bottom: none !important;
 }
-
-.logoImage{
-    display: inline-block;
-}
-
-.logoSection{
-    margin: 0 20px;
-}
-
 
 
 .nav li a:hover{
@@ -143,6 +129,7 @@ header{
     margin: 0 auto;
     padding: 0 15px;
     position: relative;
+    text-align: center;
 }
 
 .vintageBike{
@@ -160,6 +147,8 @@ header{
 
 
 }
+
+
 
 .vintageDescription{
     font-weight: 400;
@@ -231,6 +220,46 @@ header{
     border: 0;
 }
 
+.testimonialsSection{
+    padding:50px;
+    background-color: #4c4b5f;
+    text-align: center;
+}
+
+.testimonialsSection a{
+    display: inline-block;
+}
+
+.testimonialsSection a:hover{
+    opacity: 0.8;
+}
+
+.testimonialsSection .testimony{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    color: #848789;
+    font-size:24px;
+}
+
+.testimonialsSection .address{
+    margin: 20px 0;
+    font-size:18px;
+    color: #353738;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+
+.minute {
+    color: #848789;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+
+}
+
+
 footer{
     background-color: #ffffff;
 
@@ -243,6 +272,7 @@ footer{
     padding: 0 10px;
     float: left;
     color: #848789;
+    text-align: center;
 }
 
 .footerMain{
@@ -294,9 +324,29 @@ footer{
     display: inline-block;
 }
 
+.handcraftSection img{
+    width:100%;
+}
+
 .handcraftSection a:hover{
     opacity: 0.4;
 }
 
+
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .footerItems{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:720px) {
+
+    .nav li {
+        margin: 5px ;
+    }
+
+}
 
 
